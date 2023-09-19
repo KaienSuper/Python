@@ -1,2 +1,4 @@
-num = int(input("number: "))
-print(oct(num)[2:][:1])
+num = int(input("money: "))
+while num >= 8:
+    num //=8
+print(num)
