@@ -10,4 +10,7 @@ while phrase != "СТОП":
         if count_cat == 1:
             first_cat = count_str
     phrase = input()
-print(count_cat, first_cat)
+if count_cat == 0:
+    print(count_cat, "-1")
+else:
+    print(count_cat, first_cat)
