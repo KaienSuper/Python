@@ -27,4 +27,5 @@ for _ in range(count_recipe):
         recipe_cook_list.add(recipe_name)
     print("\n")
 
-print(recipe_cook_list)
+for i in recipe_cook_list:
+    print(i)
