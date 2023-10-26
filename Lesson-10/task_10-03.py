@@ -1,9 +1,10 @@
-texts_list = []
+text_list = []
 for _ in range(int(input("Count text: "))):
-    texts_list.append(input("Text: "))
+    text_list.append(input("Text: "))
 
-for i in range(len(texts_list)-1):
-    if texts_list[i+1] > texts_list[i]:
-        texts_list[i+1], texts_list[i] = texts_list[i], texts_list[i+1]
-for elem in texts_list:
+for i in range(len(text_list)-1):
+    for j in range(len(text_list)-1-i):
+        if text_list[j] > text_list[j+1]:
+            text_list[j], text_list[j+1] = text_list[j+1], text_list[j]
+for elem in text_list:
     print(elem)
